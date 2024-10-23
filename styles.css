@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #fff; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #f58220 solid;
+}
+
+header img {
+    width: 15%;
+    max-width: 100px; /* Añadido para asegurar que no se exceda un tamaño */
+    margin-right: 15px;
+}
+
+.banner {
+    background-color: #000;
+    color: white;
+    padding: 50px 20px; /* Añadido padding lateral */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./assets/frente-suma.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.button-group .btn {
+    padding: 10px 20px;
+}
+
+.features {
+    background-color: #333; 
+    padding: 50px 20px; /* Añadido padding lateral */
+    color: #f58220;
+}
+
+.features h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.features p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.custom-whatsapp-btn {
+    background-color: #fff; 
+    color: #1DA851; 
+    border: 2px solid #1DA851; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-whatsapp-btn:hover {
+    background-color: #1DA851; 
+    color: #fff; 
+    border-color: #fff; 
+}
+
+.productos {
+    padding: 50px 20px; /* Añadido padding lateral */
+}
+
+.productos h3 {
+    margin-bottom: 30px;
+}
+
+.productos .card {
+    transition: transform 0.2s;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.productos .card:hover {
+    transform: scale(1.05);
+}
+
+.productos .card-img-top {
+    object-fit: cover; 
+    height: 350px; 
+    width: 100%; 
+}
+
+.productos .card-body {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    border-top: #f58220 solid;
+}
+
+.productos .card-title {
+    margin-bottom: auto; 
+}
+
+.productos .btn {
+    align-self: center; 
+}
+
+.sobre-nosotros {
+    background-color: #f58320e8; 
+    padding: 50px 20px; /* Añadido padding lateral */
+}
+
+.sobre-nosotros img {
+    object-fit: cover; 
+    height: 250px; 
+    width: 100%; 
+    margin-left: 15px;
+}
+
+.btn-success {
+    background-color: #25D366; 
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #1DA851; 
+    transform: scale(1.05); 
+}
+
+.btn-outline-success {
+    border: 2px solid #25D366; 
+    color: #25D366; 
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #25D366; 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+.features-banner {
+    background-color: #fff;
+}
+
+.features-banner i {
+    transition: transform 0.3s;
+}
+
+.features-banner i:hover {
+    transform: scale(1.1); 
+}
+
+footer {
+    background-color: #333; 
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #f58220; 
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    header img {
+        width: 30%; /* Aumentar el tamaño en pantallas pequeñas */
+    }
+    
+    .banner h2 {
+        font-size: 2rem; /* Reducir tamaño de fuente */
+    }
+
+    .banner p {
+        font-size: 1rem; /* Reducir tamaño de fuente */
+    }
+
+    .productos .card-img-top {
+        height: 200px; /* Reducir altura de las imágenes */
+    }
+
+    .btn-success,
+    .btn-outline-success {
+        padding: 10px 20px; /* Ajustar tamaño de los botones */
+        font-size: 1rem; /* Ajustar tamaño de fuente */
+    }
+}
+
+@media (max-width: 576px) {
+    .button-group .btn {
+        width: 100%; /* Botones ocupan el ancho completo */
+        margin-bottom: 10px; /* Espaciado entre botones */
+    }
+
+    .productos .card {
+        margin-bottom: 20px; /* Espaciado entre tarjetas */
+    }
+
+    .sobre-nosotros img {
+        height: auto; /* Dejar que la imagen ajuste su altura */
+    }
+}
